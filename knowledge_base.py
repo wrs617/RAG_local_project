@@ -48,7 +48,7 @@ class KnowledgeBaseService(object):
             collection_name=config.collection_name,  # 数据库的表明
             embedding_function=DashScopeEmbeddings(
                 model="text-embedding-v4",
-                dashscope_api_key="sk-33b1b97f1d5e42329aae6d8a93d2c9d3"
+                dashscope_api_key="sk-your api key"
             ),
             persist_directory=config.persist_directory,  # 数据库存储文件夹
         )  # 向量存储的实例 Chroma向量库对象

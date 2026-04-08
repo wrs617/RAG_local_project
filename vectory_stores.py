@@ -20,6 +20,6 @@ class VectoryService(object):
 
 if __name__ == "__main__":
     from langchain_community.embeddings import DashScopeEmbeddings
-    retriever = VectoryService(embedding=DashScopeEmbeddings(model="text-embedding-v4",dashscope_api_key="sk-8d67ceb3f8774a8988e60cb47392b988")).get_retriever()
+    retriever = VectoryService(embedding=DashScopeEmbeddings(model="text-embedding-v4",dashscope_api_key="sk-your api key")).get_retriever()
     res = retriever.invoke("我是成年男性，体重140斤，给我推荐一个上衣")
     print(res)

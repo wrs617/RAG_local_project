@@ -89,8 +89,8 @@ def format_error(err: Exception) -> str:
     return f"{type(err).__name__}: {err}"
 
 
-st.set_page_config(page_title="王荣盛的本地RAG", layout="wide")
-st.title("王荣盛的本地RAG")
+st.set_page_config(page_title="本地RAG", layout="wide")
+st.title("本地RAG")
 st.divider()
 
 if "message" not in st.session_state:
